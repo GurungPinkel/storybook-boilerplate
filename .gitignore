@@ -98,6 +98,7 @@ node_modules/
 
 # output
 dist
+storybook-static
 
 #OSX
 .DS_Store

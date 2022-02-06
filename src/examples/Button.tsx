@@ -1,4 +1,3 @@
-import React from 'react';
 import './button.css';
 
 interface ButtonProps {
@@ -37,7 +36,7 @@ export const Button = ({ primary = false, size = 'medium', backgroundColor, labe
       style={{ backgroundColor }}
       {...props}
     >
-      {label}
+      MyBtnsss1234 = {label}
     </button>
   );
 };
