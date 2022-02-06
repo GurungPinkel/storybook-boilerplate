@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  storybook-boilerplate:
+    build: .
+    ports:
+      - 5000:5000
+    container_name: storybook-boilerplate
+    stdin_open: true
+    volumes:
+      - './:/app'
+      - '/app/node_modules'
