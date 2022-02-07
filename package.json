@@ -15,7 +15,7 @@
     "lint:fix": "npm run lint -- --fix",
     "prettier": "prettier --write .",
     "prepare": "husky install",
-    "docker:build": "docker-compose up --build",
+    "docker:build": "docker-compose build --no-cache",
     "docker": "docker-compose up",
     "start-storybook:debug": "start-storybook --debug-webpack",
     "build-storybook:debug": "build-storybook --debug-webpack",

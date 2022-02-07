@@ -1,3 +1,3 @@
-export { Button } from './examples/Button';
-export { Header } from './examples/Header';
-export { Page } from './examples/Page';
+export { ExampleButton } from './examples/ExampleButton';
+export { ExampleHeader } from './examples/ExampleHeader';
+export { ExamplePage } from './examples/ExamplePage';

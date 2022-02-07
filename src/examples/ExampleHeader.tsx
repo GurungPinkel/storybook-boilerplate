@@ -1,4 +1,4 @@
-import { Button } from './Button';
+import { ExampleButton } from './ExampleButton';
 import './header.css';
 
 interface HeaderProps {
@@ -8,7 +8,7 @@ interface HeaderProps {
   onCreateAccount: () => void;
 }
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
+export const ExampleHeader = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
   <header>
     <div className="wrapper">
       <div>
@@ -23,11 +23,11 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps
       </div>
       <div>
         {user ? (
-          <Button size="small" onClick={onLogout} label="Log out" />
+          <ExampleButton size="small" onClick={onLogout} label="Log out" />
         ) : (
           <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
+            <ExampleButton size="small" onClick={onLogin} label="Log in" />
+            <ExampleButton primary size="small" onClick={onCreateAccount} label="Sign up" />
           </>
         )}
       </div>
